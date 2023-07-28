@@ -1,0 +1,1033 @@
+@import url(https://fonts.adobe.com/fonts/freight-sans?as_campaign=a8192&as_camptype=&as_channel=affiliate&as_source=partnerize&clickref=1011lwU8XQpo&mv=affiliate&mv2=pz);
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: freight-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  
+}
+/*--------------------------Apartado header----------------------------*/
+/* Estilos del header y del menú de navegación */
+.header {
+  background-color: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contenedorLogo {
+  width: 80px;
+  margin-right: 8%;
+  margin-left: 8%;
+}
+
+.contenedorLogo a img {
+  width: 100%;
+  min-width: 40px;
+  max-width: 60px;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+
+
+/* Estilos del menú de navegación */
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black; /* Color de texto original */
+  font-weight: bold;
+  font-family: "freight-sans-pro", sans-serif;
+  transition: color 0.3s; /* Agregamos una transición a la propiedad color */
+}
+
+.nav-link:hover {
+  color: #ff0000; /* Nuevo color rojo al pasar el cursor por encima */
+}
+
+
+/*--------------------------Apartado header----------------------------*/
+/*---------------------------aparado registro-----------------------------*/
+
+.registrar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+
+}
+
+.contenedor-registro{
+  display: flex;
+  border-radius: 20px;
+  box-shadow:none;
+  height: 500px;
+  max-width: 900px;
+  transition: all 1s ease;
+  margin: 10px;
+  
+  
+}
+
+.informacion{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #1e3932;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.apartado{
+  width: 100%;
+  padding: 0 30px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.apartado .img {     /*imagen registro*/
+  max-width: 35%;
+  max-height: 35%;
+  padding-bottom: 15px;
+}
+
+
+
+.apartado p{
+  margin: 15px;
+  font-weight: normal;
+  color: #f9ebeb;;
+}
+
+.apartado a{
+  background-color: #036f49;
+  outline: none;
+
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: rgb(220, 248, 224);
+  cursor: pointer;
+  transition: background-color .3s ease;
+  text-decoration: none;
+}
+
+.rewards .apartado a{
+  background-color:#00824800;
+  outline: none;
+  margin: 25px;
+  font-weight: bold;
+  border: solid 1px #fbfbfb;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: rgb(220, 248, 224);
+  cursor: pointer;
+  transition: background-color .3s ease;
+  text-decoration: none;
+}
+
+.apartado a:hover{/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+  background-color: #305249;
+  border: none;
+  color: #a5ada8;
+  box-shadow: 0 2px 5px color black;
+}
+
+.conte-informacion{
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  width: 60%;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.conte-informacion-derecha{
+  padding: 0 30px;
+}
+.conte-informacion-derecha h2{
+  font-size: 2rem;
+}
+
+.conte-informacion-derecha p{
+  color: #555;
+
+}
+
+.iconos-registro{
+  margin: 10px 0;
+}
+
+.iconos-registro i{
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: rgb(14, 0, 0);
+  border: solid thin rgba(72, 99, 81, 0.305);
+  transition: backgroud-color 0.3s;
+  box-shadow: 0 2px 5px color black;
+  
+}
+
+.iconos-registro i:hover{
+  background-color: #2c755c;
+  color: #999;
+}
+
+.form-registro{
+  margin: 30px 0 0 0;
+  overflow: hidden;
+}
+
+.form-registro label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 0 10px;
+  box-shadow: 0 2px 5px color black;
+}
+
+.form-registro label input{
+  width: 100%;
+  padding: 10px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 20px;
+  color: #333;
+
+}
+
+
+
+.form-registro input[type="submit"]{  /*boton de registro*/
+  background-color: #00623e;
+  color: #f3e4e4;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.form-registro input[type="submit"]:hover{
+  background-color: #0a895a;
+
+}
+
+/*mediaq de registro*/
+@media screen and (max-width:750px){
+  .bodyregistro {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:590px){
+  .bodyregistro{
+    font-size: 10px;
+  }
+  
+  .contenedor-registro{
+    height: auto;
+    flex-direction: column;
+  }
+  .informacion{
+    width: 100%;
+    padding: 20%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0;
+    margin-top: 100px;
+  }
+    
+  .conte-informacion{
+    width: 100%;
+    padding: 20%;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+  }
+  .contenedor-registro.informacion{
+    margin-top: 90%;
+  }
+}
+
+
+
+
+
+
+/*---------------------------------------------------*/
+.conte-informacion-derecha h2{
+  color: #053826;
+  font-weight: bold;
+  font-size: 35px;
+}
+.conte-informacion-derecha p{
+ color: #292929;
+}
+
+.registrar a{
+  margin: 15px 0;
+}
+
+
+
+
+/*------------------Menu bebidas --------------------------------------------------------------*/
+.menubebidas .menuParrafo h1 {
+  color: rgba(51, 51, 51, 0.672);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  padding-bottom:25px ;
+  padding-top: 25px;
+
+}
+
+.menubebidas .menuParrafo h2 {
+  color: #1e3932;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.menubebidas .tituloProducto {
+  font-weight: 6;
+  font-size: 30px;
+  margin-left: 5%;
+  display: block;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;;
+  padding-bottom:25px ;
+  padding-top: 25px;
+}
+
+
+
+
+.menubebidas .contenedorProductos .bebidas h4 {
+  font-size: 25px; /* Tamanqo de fuente modificado */
+  font-weight: bold; 
+  color: #1e3932; 
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom:50px ;
+
+}
+
+
+
+
+/*------------------contenedor de bebidas--------------------------*/
+
+.contenedorProductos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.menubebidas {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 7%;
+}
+
+.bebidas {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+  padding: 0 5%;
+}
+
+.bebidas img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: #1e3932;
+  border: 5px black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.bebidas img:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 0 25px rgb(164, 174, 169);
+  
+}
+
+
+.bebidas h4 {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .contenedorProductos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bebidas h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedorProductos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bebidas img {
+    min-width: 130px; 
+  }
+
+  .bebidas h4 {
+    font-size: 16px;
+  }
+}
+
+/*------------------ Fin Menu bebidas --------------------------------------------------------------*/
+
+
+/*------------------ Inicio Index --------------------------------------------------------------*/
+
+.imagen-con-descripcion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color:rgb(51, 165, 193);
+
+}
+
+.imagen-con-descripcion img {
+  width: 50%; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.imagen-con-descripcion .descripcion {
+  width: 50%; /* Ajusta el tamaño de la caja */
+  background-color: none; 
+  padding: 10px;
+  margin: 15px;
+}
+
+.imagen-con-descripcion h2 {/* titulo principal en index*/
+  font-size: 50px;
+  font-weight: bold;
+  color: #fcfcdf;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.imagen-con-descripcion p {/* subtitulo p en index */
+  font-size: 25px; 
+  text-align: center;
+  color: #fefee3; 
+}
+
+
+@media (max-width: 768px) {
+  .imagen-con-descripcion {
+    flex-direction: column;
+  }
+
+  .imagen-con-descripcion img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .imagen-con-descripcion .descripcion {
+    width: 100%;
+  }
+
+  .imagen-con-descripcion h2 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .imagen-con-descripcion p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  
+}
+
+
+
+
+
+                  /*    ======imagenes a la derecha=======================        */
+
+
+
+
+.imagen-con-descripcion-izquierda {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #4eaa88;
+}
+
+.imagen-con-descripcion-izquierda img {
+  width: auto;
+  height: auto;
+  margin-left: 10px;
+  min-height: 250px;
+  min-width: 250px;
+}
+
+.imagen-con-descripcion-izquierda .descripcion {
+  width: 50%; /* Ajusta el tamaño de la caja */
+}
+
+.imagen-con-descripcion-izquierda .descripcion h2 {
+  padding: 5%;
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #005838;
+  
+}
+
+.imagen-con-descripcion-izquierda .descripcion p {
+  font-size: 30px; /* párrafo*/
+  text-align: center;
+  align-items: center;
+  color: #00623e;
+  padding: 3%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+  .imagen-con-descripcion-izquierda {
+    flex-direction: column;
+  }
+
+  .imagen-con-descripcion-izquierda img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .imagen-con-descripcion-izquierda .descripcion {
+    width: 100%;
+  }
+
+  .imagen-con-descripcion-izquierda .descripcion h2 {
+    font-size: 35px;
+  }
+
+  .imagen-con-descripcion-izquierda .descripcion p {
+    font-size: 25px;
+  }
+}
+
+
+
+/*=============================num 3=======================================*/
+
+
+
+.imagen-con-descripcion-num3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #fc6446;
+}
+
+.imagen-con-descripcion-num3 img {
+  width: 40%; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  margin-right: 10px;
+  object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto */
+}
+
+.imagen-con-descripcion-num3 .descripcion {
+  width: 50%; /* Ajusta el tamaño de la caja*/
+  background-color: none; 
+  padding: 10px;
+}
+
+.imagen-con-descripcion-num3 h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fcfcdf;
+  text-align: auto;
+  margin-bottom: 10px;
+}
+
+.imagen-con-descripcion-num3 p {
+  font-size: 26px;
+  text-align: auto;
+  color: #fefee3;
+}
+
+.boton-index {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.boton2 {
+  font-size: 20px;
+  font-weight: bold;
+  display: center;
+  margin: 15px;
+  padding: 4px 10px;
+  color: #003c26;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: black;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+
+.boton3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 10px;
+  color: #7e0000;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: black;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
+  .imagen-con-descripcion-num3 {
+    flex-direction: column;
+  }
+
+  .imagen-con-descripcion-num3 img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .imagen-con-descripcion-num3 .descripcion {
+    width: 100%;
+  }
+
+  .imagen-con-descripcion-num3 h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .imagen-con-descripcion-num3 p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .boton-index {
+    margin-top: 10px;
+  }
+
+  .boton2,
+  .boton3 {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+}
+
+
+
+
+
+/*=============================num 4=======================================*/
+
+
+
+
+
+/*=============================mediaq=======================================*/
+
+@media (max-width: 850px) {
+  .imagen-con-descripcion {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imagen-con-descripcion img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .imagen-con-descripcion .descripcion {
+    width: 100%;
+  }
+}
+
+
+
+
+/*------------------ Fin Index --------------------------------------------------------------*/
+
+/*------------------ Inicio Cafe --------------------------------------------------------------*/
+.main-contacto {
+  text-align: center;
+}
+
+.titulo-contacto {
+  width: 100%;
+  max-height: 120px; 
+  background-color: #1e3932;
+  overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.titulo-contacto h1 {
+  font-weight: bold;
+  line-height: 120px; /* centrar verticalmente el texto */
+  margin: 0;
+  color: #ffffff;
+  font-size: 3rem; 
+  margin-right: 30%; 
+}
+
+
+
+.main-contacto .contenido h2 {
+  font-size: 33px;
+  text-align: left; 
+  margin-top:25px ;
+  margin-bottom: 20px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+.main-contacto .contenido h3{
+  font-size: 25px;
+  text-align: left;
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.main-contacto .contenido p{
+  font-size: 20px;
+  text-align: left;
+  margin-top:25px ;
+  padding-right: 4%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+.main-contacto .contenido img {
+  max-width: 100%;
+  height: auto; 
+  margin-top: 25px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+
+
+
+/*------------------ Fin Cafe --------------------------------------------------------------*/
+/*------------------ Inicio Rewards --------------------------------------------------------------*/
+
+.rewards {
+  display: flex;
+  height: 100vh;
+}
+
+.no-scrollable {
+  width: 33%;
+  background: linear-gradient(0deg, rgb(29, 57, 50) 0%, rgb(10, 105, 75) 100%);
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.no-scrollable h1 {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  color: whitesmoke;
+  padding: 5%;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.no-scrollable .images-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.no-scrollable .img2 {
+  max-width: 350px;
+  width: auto;
+  height: auto;
+}
+
+.no-scrollable .img1 {
+  max-width: 150px;
+  width: auto;
+  height: auto;
+}
+.no-scrollable .apartado {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto); 
+  gap: 10px; 
+}
+
+.scrollable {
+  width: 100%;
+  overflow-y:auto;
+  background-color: #e0e0e0;
+  padding: 0;
+}
+.scrollable h2{
+  padding: 5%;
+}
+
+.scrollable .footer{
+  background-color: #d5d6d6;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas para pantallas grandes */
+  gap: 5px;
+}
+
+
+.rewards .scrollable .contenedor-2 .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 5px;
+}
+
+.contenedor-3,.contenedor-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+
+.rewards h2 {
+  margin-bottom: 20px;
+  padding-top: 10%;
+}
+.contenedor-4 .gift{
+  max-width: 400px;
+  width: auto; 
+  height: auto; 
+  margin-bottom: 10px;
+}
+.contenedor-4 .pago {
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 15px; 
+}
+
+
+.contenedor-4 img{
+  gap: 30px;
+}
+.scrollable .contenedor-2 img{
+  padding-top: 20px;
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
+
+.contenedor-3 img {
+  padding-top: 20px;
+  max-width: 500px;
+  max-height: 500px; 
+  width: 100%;
+  height: auto; 
+  margin-bottom: 10px;
+}
+.contenedor-4 .pago img{
+  margin: 30px;
+}
+
+.contenedor-3,.contenedor-4 p{
+  font-weight: bold;
+  color: #555;
+  font-size: 20px;
+
+}
+
+.grid-item {
+
+  padding: 5px;
+  text-align: center; /* Centra contenido dentro de griddd*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+
+
+.grid-item p{
+  font-weight: bold;
+  color: #555;
+  font-size: 85%;
+}
+
+
+.grid-item  img {
+  padding-top: 15px;
+  max-width: 70%; 
+  height: auto; 
+  display: block; 
+  margin-bottom: 10px; 
+}
+
+
+@media screen and (max-width: 1100px) {
+  .rewards {
+    flex-direction: column; 
+  }
+  .scrollable{
+    overflow-y:visible;
+  }
+  .no-scrollable,
+  .scrollable {
+    width: 100%; 
+  }
+  .rewards.no-scrollable img{
+    max-width: 300px;
+    width: auto;
+    height: auto;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 9%;
+  }
+  .rewards .scrollable .contenedor-2 .grid-container{
+    grid-template-columns: repeat(2, 3fr);
+
+  }
+  .grid-item img {
+    max-width: 45%;
+    max-width: 150px;
+    min-width: 90px;
+  }
+  .grid-item p{
+    font-size: 100%;
+    min-height: 50px;
+  }
+
+  .no-scrollable{
+    padding-bottom: -10;
+  }
+
+}
+
+
+
+/*------------------ Fin Rewards --------------------------------------------------------------*/
+
+
+.footer .pre-footer {
+  background-color: #1e3932;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer .pre-footer img {
+  width: 15%;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+.footer {
+  background-color: #e6e4e4;
+  margin-top: 5%;
+  padding: 0;
+  text-align: center;
+}
+.footer .redes-Sociales {
+  display: inline-block;
+  margin-right: 10px;
+  padding-top: 20px;
+}
+
+.footer .redes-Sociales img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.footer .enlaces-Footer li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.enlaces-Footer a {
+  color: rgb(43, 39, 39);
+  text-decoration: none;
+}
+
+.footer .lorem-Footer {
+  margin-top: 20px;
+  padding-bottom: 25px;
+
+}
+
+/*---------------------------------------------------*/
