@@ -3,7 +3,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        background-color:rgb(51, 165, 193);
+        background-color:$IndexApartado1;
         img {
             width: 50%; 
             height: auto;
@@ -33,7 +33,7 @@
         flex-direction: row-reverse;
         align-items: center;
         margin-bottom: 20px;
-        background-color: #4eaa88;
+        background-color: $IndexApartado2;
         .descripcion {
                 width: 70%;
                 p {
@@ -125,7 +125,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
-        background-color: #fc6446;
+        background-color: $IndexApartado3;
         img {
             width: 40%; 
             height: auto;

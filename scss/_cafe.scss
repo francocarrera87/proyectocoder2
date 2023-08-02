@@ -3,12 +3,12 @@
     .titulo-contacto {
       width: 100%;
       max-height: 150px; 
-      background-color: #1e3932;
-      overflow: hidden; /* Evita que el contenido se desborde */
+      background-color: $VerdeStarbacks;
+      overflow: hidden; 
     
       h1 {
         font-weight: bold;
-        line-height: 120px; /* centrar verticalmente el texto */
+        line-height: 120px;
         margin: 0;
         color: #ffffff;
         font-size: 3rem; 
