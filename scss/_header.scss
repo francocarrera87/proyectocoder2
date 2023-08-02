@@ -1,0 +1,47 @@
+.header {
+    background-color: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  
+    .navbar {
+      .contenedorLogo {
+        width: 80px;
+        margin-right: 8%;
+        margin-left: 8%;
+  
+        a {
+          img {
+            width: 100%;
+            min-width: 40px;
+            max-width: 60px;
+          }
+        }
+      }
+  
+      .navbar-toggler {
+        border: none;
+        background-color: transparent;
+      }
+  
+      .navbar-nav {
+        text-align: center;
+  
+        .nav-item {
+          margin: 0 10px;
+  
+          .nav-link {
+            text-decoration: none; 
+            color: rgb(109, 109, 109);
+            font-weight: bold;
+            font-family: "freight-sans-pro", sans-serif;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #2d8647;
+            
+            }
+          }
+        }
+      }
+    }
+  }
+  

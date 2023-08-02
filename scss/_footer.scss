@@ -1,0 +1,56 @@
+.footer{
+    background-color: #e6e4e4;
+    margin-top: 5%;
+    padding: 0;
+    text-align: center;
+    .pre-footer {
+      background-color: #1e3932;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px;
+    
+      img {
+        width: 15%;
+        height: 100%;
+        margin-right: 10px;
+        display: flex;
+        text-align: center;
+        margin: auto;
+      }
+    }
+    .footer-info{
+  
+      .redes-Sociales {
+        display: inline-block;
+        margin-right: 10px;
+        padding-top: 20px;
+      
+        img {
+          width: 30px;
+          height: 30px;
+          margin-bottom: 20px;
+        }
+      }
+    .enlaces-Footer{
+      li {
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        color: black;
+      
+        a {
+          color: rgb(43, 39, 39);
+          text-decoration: none;
+        }
+      }
+    }
+    .lorem-Footer{
+      p{margin-top: 20px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+  
+  }

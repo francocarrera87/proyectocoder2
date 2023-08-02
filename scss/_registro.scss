@@ -1,0 +1,189 @@
+.registrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  
+    .contenedor-registro {
+      display: flex;
+      border-radius: 20px;
+      box-shadow: none;
+      height: 500px;
+      max-width: 900px;
+      transition: all 1s ease;
+      margin: 10px;
+  
+      .informacion {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #1e3932;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+  
+        .apartado {
+          width: 100%;
+          padding: 0 30px;
+          color: rgb(255, 255, 255);
+          text-align: center;
+  
+          .img {
+            max-width: 35%;
+            max-height: 35%;
+            padding-bottom: 15px;
+          }
+  
+          h2 {
+            font-size: 2.5rem;
+          }
+  
+          p {
+            margin: 15px;
+            font-weight: normal;
+            color: #f9ebeb;
+          }
+  
+          a {
+            background-color: #036f49;
+            outline: none;
+            border: solid 2px #053826;
+            border-radius: 20px;
+            padding: 10px 20px;
+            color: rgb(220, 248, 224);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+          }
+  
+          &:hover a {
+            background-color: #305249;
+            border: none;
+            color: #a5ada8;
+            box-shadow: 0 2px 5px color black;
+          }
+        }
+      }
+  
+      .conte-informacion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        text-align: center;
+        background-color: #f1f1f1;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+  
+        .conte-informacion-derecha {
+          padding: 0 30px;
+          h2 {
+            font-size: 2rem;
+          }
+  
+          p {
+            color: #555;
+          }
+  
+          .iconos-registro {
+            margin: 10px 0;
+            i {
+              border-radius: 50%;
+              padding: 15px;
+              cursor: pointer;
+              margin: 0 10px;
+              color: rgb(14, 0, 0);
+              border: solid thin rgb(46, 83, 57);
+              transition: background-color 0.3s;
+              box-shadow: 0 2px 5px color black;
+            }
+  
+            i:hover {
+              background-color: #0a895a;
+              color: #999;
+            }
+          }
+  
+          p {
+            color: #555;
+          }
+  
+          .form-registro {
+            margin: 30px 0 0 0;
+            overflow: hidden;
+            label {
+              display: flex;
+              align-items: center;
+              margin-bottom: 15px;
+              border-radius: 20px;
+              padding: 0 10px;
+              box-shadow: 0 2px 5px color black;
+            }
+            input {
+              width: 100%;
+              padding: 10px;
+              background-color: #e4e4e4;
+              border: none;
+              border-radius: 20px;
+              color: #333;
+            }
+            input[type="submit"] {
+              background-color: #00623e;
+              color: #f3e4e4;
+              border-radius: 20px;
+              border: none;
+              padding: 10px 15px;
+              margin-top: 10px;
+            }
+            input[type="submit"]:hover {
+              background-color: #0a895a;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /*mediaq de registro*/
+  @media screen and (max-width: 750px) {
+    .registrar {
+      .bodyregistro {
+        font-size: 12px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 590px) {
+    .registrar {
+      .bodyregistro {
+        font-size: 10px;
+      }
+  
+      .contenedor-registro {
+        height: auto;
+        flex-direction: column;
+  
+        .informacion {
+          width: 100%;
+          padding: 20%;
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          margin-top: 100px;
+        }
+  
+        .conte-informacion {
+          width: 100%;
+          padding: 20%;
+          border-bottom-left-radius: 20px;
+          border-top-right-radius: 0px;
+        }
+  
+        .contenedor-registro.informacion {
+          margin-top: 90%;
+        }
+      }
+    }
+  }
+    
