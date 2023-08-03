@@ -558,6 +558,32 @@
   padding-right: 25%;
 }
 
+@media screen and (max-width: 768px) {
+  .main-contacto .titulo-contacto h1 {
+    font-size: 3rem;
+    margin-right: 0;
+  }
+  .main-contacto .contenido p,
+  .main-contacto .contenido h2,
+  .main-contacto .contenido h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .main-contacto .titulo-contacto h1 {
+    font-size: 1.8rem;
+  }
+  .main-contacto .contenido p {
+    font-size: 18px;
+  }
+  .main-contacto .contenido h2 {
+    font-size: 28px;
+  }
+  .main-contacto .contenido h3 {
+    font-size: 22px;
+  }
+}
 .rewards {
   display: flex;
   height: 100vh;
