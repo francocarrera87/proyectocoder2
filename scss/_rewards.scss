@@ -47,7 +47,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto); 
   gap: 10px; 
-}
+} 
 
 .scrollable {
   width: 100%;
@@ -136,7 +136,7 @@
 .grid-item {
 
   padding: 5px;
-  text-align: center; /* Centra contenido dentro de griddd*/
+  text-align: center; 
   display: flex;
   flex-direction: column;
   justify-content: center;

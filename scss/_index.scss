@@ -1,4 +1,7 @@
 .index{
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     .imagen-con-descripcion {
         display: flex;
         align-items: center;
@@ -13,8 +16,8 @@
             background-color: none; 
             padding: 10px;
             margin: 15px;
-            h2 {
-                font-size: 40px;
+            h1 {
+                font-size: 2,2em;
                 font-weight: bold;
                 color: #fcfcdf;
                 text-align: center;
@@ -35,7 +38,7 @@
         margin-bottom: 20px;
         background-color: $IndexApartado2;
         .descripcion {
-                width: 70%;
+                width: 100%;
                 p {
                     font-size: 30px; 
                     text-align: center;
@@ -58,9 +61,11 @@
 
 
      @media screen and (max-width: 856px) {
-        .index .imagen-con-descripcion-izquierda ,.imagen-con-descripcion-num3{
+        .index ,.imagen-con-descripcion.imagen-con-descripcion-izquierda ,.imagen-con-descripcion-num3{
           overflow: hidden;
           flex-direction: column;
+          padding: 0;
+          margin: 0;
         
         }
         
@@ -124,7 +129,7 @@
     .imagen-con-descripcion-num3 {
         display: flex;
         align-items: center;
-        margin-bottom: 20px;
+       
         background-color: $IndexApartado3;
         img {
             width: 40%; 
@@ -137,17 +142,17 @@
                 background-color: none; 
                 padding: 10px;
                 h2 {
-                    font-size: 50px;
-                    font-weight: bold;
-                    color: #fcfcdf;
-                    text-align: auto;
-                    margin-bottom: 10px;
-                  }
+                  font-size: 2em; 
+                  font-weight: bold;
+                  color: #fcfcdf;
+                  text-align: auto;
+                  margin-bottom: 10px;
+                }
                 p {
-                    font-size: 26px;
-                    text-align: auto;
-                    color: #fefee3;
-                  }
+                  font-size: 1.3em; /* El tamaño se ajustará proporcionalmente al tamaño de fuente del contenedor padre */
+                  text-align: auto;
+                  color: #fefee3;
+                }
                 }    
         }
 }
@@ -199,21 +204,20 @@
 
   .imagen-con-descripcion-num3 img {
     min-width:385px ;
-    width: 100%;
     margin-bottom: 10px;
   }
 
   .imagen-con-descripcion-num3 .descripcion {
-    width: 100%;
+    width: 50%;
   }
 
   .imagen-con-descripcion-num3 h2 {
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
   }
 
   .imagen-con-descripcion-num3 p {
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
   }
 

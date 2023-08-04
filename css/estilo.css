@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.adobe.com/fonts/freight-sans?as_campaign=a8192&as_camptype=&as_channel=affiliate&as_source=partnerize&clickref=1011lwU8XQpo&mv=affiliate&mv2=pz);
 * {
   margin: 0;
@@ -43,6 +44,11 @@
   color: #2d8647;
 }
 
+.index {
+  margin: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 .index .imagen-con-descripcion {
   display: flex;
   align-items: center;
@@ -59,8 +65,8 @@
   padding: 10px;
   margin: 15px;
 }
-.index .imagen-con-descripcion .descripcion h2 {
-  font-size: 40px;
+.index .imagen-con-descripcion .descripcion h1 {
+  font-size: 2, 2em;
   font-weight: bold;
   color: #fcfcdf;
   text-align: center;
@@ -79,7 +85,7 @@
   background-color: #4eaa88;
 }
 .index .imagen-con-descripcion-izquierda .descripcion {
-  width: 70%;
+  width: 100%;
 }
 .index .imagen-con-descripcion-izquierda .descripcion p {
   font-size: 30px;
@@ -97,9 +103,11 @@
   color: #005838;
 }
 @media screen and (max-width: 856px) {
-  .index .index .imagen-con-descripcion-izquierda, .index .imagen-con-descripcion-num3 {
+  .index .index, .index .imagen-con-descripcion.imagen-con-descripcion-izquierda, .index .imagen-con-descripcion-num3 {
     overflow: hidden;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
   .index .index.imagen-con-descripcion-izquierda img {
     width: 100%;
@@ -146,7 +154,6 @@
 .index .imagen-con-descripcion-num3 {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   background-color: #fc6446;
 }
 .index .imagen-con-descripcion-num3 img {
@@ -161,14 +168,14 @@
   padding: 10px;
 }
 .index .imagen-con-descripcion-num3 .descripcion h2 {
-  font-size: 50px;
+  font-size: 2em;
   font-weight: bold;
   color: #fcfcdf;
   text-align: auto;
   margin-bottom: 10px;
 }
 .index .imagen-con-descripcion-num3 .descripcion p {
-  font-size: 26px;
+  font-size: 1.3em; /* El tamaño se ajustará proporcionalmente al tamaño de fuente del contenedor padre */
   text-align: auto;
   color: #fefee3;
 }
@@ -215,18 +222,17 @@
   }
   .imagen-con-descripcion-num3 img {
     min-width: 385px;
-    width: 100%;
     margin-bottom: 10px;
   }
   .imagen-con-descripcion-num3 .descripcion {
-    width: 100%;
+    width: 50%;
   }
   .imagen-con-descripcion-num3 h2 {
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
   }
   .imagen-con-descripcion-num3 p {
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
   }
   .boton-index {
@@ -722,7 +728,7 @@
 
 .grid-item {
   padding: 5px;
-  text-align: center; /* Centra contenido dentro de griddd*/
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
