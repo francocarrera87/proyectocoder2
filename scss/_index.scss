@@ -1,250 +1,216 @@
-.index{
-    margin: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    .imagen-con-descripcion {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        background-color:$IndexApartado1;
-        img {
-            width: 50%; 
-            height: auto;
-          }
-        .descripcion {
+@mixin estiladoBoton {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: black;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #444040;
 
-            padding: 10px;
-            
-            h1 {
-              font-size: 2.2em; 
-              font-weight: bold;
-              color: $titulosFoto1;
-              text-align: center;
-              margin-bottom: 10px;
-            }
-            p {
-                font-size: 2em; 
-                text-align: center;
-                color: $titulosFoto1; 
-              }
-            }    
-    }
-
-    .imagen-con-descripcion-izquierda {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        margin-bottom: 20px;
-        background-color: $IndexApartado2;
-        .descripcion {
-                width: 100%;
-                p {
-                    font-size: 30px; 
-                    text-align: center;
-                    align-items: center;
-                    color: #00623e;
-                    padding: 3%;
-                }
-                h2 {
-                        padding: 5%;
-                        font-size: 45px;
-                        font-weight: bold;
-                        text-align: center;
-                        margin-bottom: 10px;
-                        color: #005838;
-                    }
-            }
-            
-     }
-
-
-
-     @media screen and (max-width: 856px) {
-        .index ,.imagen-con-descripcion.imagen-con-descripcion-izquierda ,.imagen-con-descripcion-num3{
-          overflow: hidden;
-          flex-direction: column;
-          padding: 0;
-          margin: 0;
-        
-        }
-        
-        .index.imagen-con-descripcion-izquierda img {
-          width: 100%; 
-          height: auto;
-          margin-bottom: 10px;
-          object-fit: cover; 
-            }
-      
-        .index.imagen-con-descripcion-izquierda .descripcion {
-          width: 100%;
-        }
-      
-        .index.imagen-con-descripcion-izquierda,.imagen-con-descripcion-num3 .descripcion h2 {
-          font-size: 35px;
-          text-align: center;
-        }
-      
-        .index.imagen-con-descripcion-izquierda,.imagen-con-descripcion-num3 .descripcion p {
-          font-size: 25px;
-          text-align: center;
-        }
-        
-        .imagen-con-descripcion {
-            flex-direction: column;
-          }
-        
-          .imagen-con-descripcion img {
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 10px;
-          }
-        
-          .imagen-con-descripcion .descripcion {
-            width: 100%;
-          }
-        
-          .imagen-con-descripcion h2 {
-            font-size: 38px;
-            text-align: center;
-          }
-        
-          .imagen-con-descripcion p {
-            font-size: 20px;
-            text-align: center;
-          }
-          
-      }
+  &:hover {
+    transition: color 0.5s; 
+    color: rgb(240, 239, 239);
+  }
 }
 
-@media screen and (max-width: 856px) {
-  .index .imagen-con-descripcion-izquierda{
-    overflow: hidden;
-    flex-direction: column;
+.index {
+  margin: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+ 
+  .imagen-con-descripcion {
+    background-color: $IndexApartado1;
   }
 
-  
-}
-
-
-.index{
-    .imagen-con-descripcion-num3 {
-        display: flex;
-        align-items: center;
-       
-        background-color: $IndexApartado3;
-        img {
-            width: 40%; 
-            height: auto;
-            margin-right: 10px;
-            object-fit: cover; 
-        }
-        .descripcion {
-                width: 50%; 
-                background-color: none; 
-                padding: 10px;
-                h2 {
-                  font-size: 2em; 
-                  font-weight: bold;
-                  color: #fcfcdf;
-                  text-align: auto;
-                  margin-bottom: 10px;
-                }
-                p {
-                  font-size: 1.3em; 
-                  text-align: auto;
-                  color: #fefee3;
-                }
-                }    
-        }
-}
-
-
-.boton-index {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.boton2 {
-  font-size: 20px;
-  font-weight: bold;
-  display: center;
-  margin: 15px;
-  padding: 4px 10px;
-  color: #003c26;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  border: black;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-
-.boton3 {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 4px 10px;
-  color: #7e0000;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  border: black;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-.descripcion.boton-index .boton2,.boton3:hover{
-  color: rgb(240, 239, 239);
-}
-
-
-/* Media queries */
-
-@media (max-width: 768px) {
+  .imagen-con-descripcion,
+  .imagen-con-descripcion-izquierda,
   .imagen-con-descripcion-num3 {
-    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+      width: 50%;
+      height: auto;
+    }
+    .descripcion {
+      padding: 10px;
+      h1 {
+        font-size: 2.2em;
+        font-weight: bold;
+        color: $titulosFoto1;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 2em;
+        text-align: center;
+        color: $titulosFoto1;
+      }
+    }
   }
 
-  .imagen-con-descripcion-num3 img {
-    min-width:375px ;
-    margin-bottom: 10px;
+  .imagen-con-descripcion-izquierda {
+    flex-direction: row-reverse;
+    background-color: $IndexApartado2;
+    .descripcion {
+      width: 100%;
+      p {
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        color: #00623e;
+        padding: 3%;
+      }
+      h2 {
+        padding: 5%;
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        color: #005838;
+      }
+    }
+    img {
+      width: 70%;
+      height: auto;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
   }
 
-  .imagen-con-descripcion-num3 .descripcion {
-    width: 50%;
-  }
-
-  .imagen-con-descripcion-num3 h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .imagen-con-descripcion-num3 p {
-    font-size: 1rem;
-    text-align: center;
+  .imagen-con-descripcion-num3 {
+    background-color: $IndexApartado3;
+    img {
+      width: 50%;
+      height: auto;
+      margin-right: 10px;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        min-width: 100%;
+      }
+    }
+    .descripcion {
+      width: 50%;
+      background-color: transparent;
+      padding: 10px;
+      h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #fcfcdf;
+        text-align: auto;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 1.3em;
+        text-align: auto;
+        color: #fefee3;
+      }
+    }
   }
 
   .boton-index {
-    margin-top: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
   }
 
-  .boton2,
   .boton3 {
-    font-size: 18px;
-    padding: 4px 8px;
-  }
-}
-
-@media (max-width: 850px) {
-  .imagen-con-descripcion {
-    flex-direction: column;
-    align-items: flex-start;
+    @include estiladoBoton;
   }
 
-  .imagen-con-descripcion img {
-    width: 100%;
-    margin-bottom: 10px;
+  @media screen and (max-width: 856px) {
+    .index,
+    .imagen-con-descripcion,
+    .imagen-con-descripcion-izquierda,
+    .imagen-con-descripcion-num3 {
+      overflow: hidden;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 20px; 
+    }
+
+    .index .imagen-con-descripcion img,
+    .index .imagen-con-descripcion-izquierda img,
+    .index .imagen-con-descripcion-num3 img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      object-fit: cover;
+
+    }
+
+    .index .imagen-con-descripcion .descripcion,
+    .index .imagen-con-descripcion-izquierda .descripcion,
+    .index .imagen-con-descripcion-num3 .descripcion {
+      width: 100%;
+    }
+
+    .index .imagen-con-descripcion .descripcion p,
+    .index .imagen-con-descripcion-izquierda .descripcion p,
+    .index .imagen-con-descripcion-num3 .descripcion p {
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .index .imagen-con-descripcion .descripcion h2,
+    .index .imagen-con-descripcion-izquierda .descripcion h2,
+    .index .imagen-con-descripcion-num3 .descripcion h2 {
+      text-align: center;
+    }
   }
 
-  .imagen-con-descripcion .descripcion {
-    width: 100%;
+  @media (max-width: 768px) {
+    .imagen-con-descripcion-num3 {
+      flex-direction: column;
+    }
+
+    .imagen-con-descripcion-num3 img {
+      min-width: 375px;
+      margin-bottom: 10px;
+    }
+
+    .imagen-con-descripcion-num3 .descripcion {
+      width: 50%;
+    }
+
+    .imagen-con-descripcion-num3 h2 {
+      
+      font-size: 2.3em;
+      text-align: center;
+    }
+
+    .imagen-con-descripcion-num3 p {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .boton-index {
+      margin-top: 10px;
+    }
+    .boton3 {
+      font-size: 18px;
+      padding: 4px 8px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .imagen-con-descripcion {
+      flex-direction: column;
+      align-items:center;
+    }
+
+    .imagen-con-descripcion img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .imagen-con-descripcion .descripcion {
+      width: 50%;
+    }
   }
 }

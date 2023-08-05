@@ -53,35 +53,44 @@
   margin-bottom: 2%;
 }
 .index .imagen-con-descripcion {
+  background-color: rgb(51, 165, 193);
+}
+.index .imagen-con-descripcion,
+.index .imagen-con-descripcion-izquierda,
+.index .imagen-con-descripcion-num3 {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  background-color: rgb(51, 165, 193);
 }
-.index .imagen-con-descripcion img {
+.index .imagen-con-descripcion img,
+.index .imagen-con-descripcion-izquierda img,
+.index .imagen-con-descripcion-num3 img {
   width: 50%;
   height: auto;
 }
-.index .imagen-con-descripcion .descripcion {
+.index .imagen-con-descripcion .descripcion,
+.index .imagen-con-descripcion-izquierda .descripcion,
+.index .imagen-con-descripcion-num3 .descripcion {
   padding: 10px;
 }
-.index .imagen-con-descripcion .descripcion h1 {
+.index .imagen-con-descripcion .descripcion h1,
+.index .imagen-con-descripcion-izquierda .descripcion h1,
+.index .imagen-con-descripcion-num3 .descripcion h1 {
   font-size: 2.2em;
   font-weight: bold;
   color: #fcfcdf;
   text-align: center;
   margin-bottom: 10px;
 }
-.index .imagen-con-descripcion .descripcion p {
+.index .imagen-con-descripcion .descripcion p,
+.index .imagen-con-descripcion-izquierda .descripcion p,
+.index .imagen-con-descripcion-num3 .descripcion p {
   font-size: 2em;
   text-align: center;
   color: #fcfcdf;
 }
 .index .imagen-con-descripcion-izquierda {
-  display: flex;
   flex-direction: row-reverse;
-  align-items: center;
-  margin-bottom: 20px;
   background-color: #4eaa88;
 }
 .index .imagen-con-descripcion-izquierda .descripcion {
@@ -102,75 +111,37 @@
   margin-bottom: 10px;
   color: #005838;
 }
-@media screen and (max-width: 856px) {
-  .index .index, .index .imagen-con-descripcion.imagen-con-descripcion-izquierda, .index .imagen-con-descripcion-num3 {
-    overflow: hidden;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-  .index .index.imagen-con-descripcion-izquierda img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: cover;
-  }
-  .index .index.imagen-con-descripcion-izquierda .descripcion {
-    width: 100%;
-  }
-  .index .index.imagen-con-descripcion-izquierda, .index .imagen-con-descripcion-num3 .descripcion h2 {
-    font-size: 35px;
-    text-align: center;
-  }
-  .index .index.imagen-con-descripcion-izquierda, .index .imagen-con-descripcion-num3 .descripcion p {
-    font-size: 25px;
-    text-align: center;
-  }
-  .index .imagen-con-descripcion {
-    flex-direction: column;
-  }
-  .index .imagen-con-descripcion img {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .index .imagen-con-descripcion .descripcion {
-    width: 100%;
-  }
-  .index .imagen-con-descripcion h2 {
-    font-size: 38px;
-    text-align: center;
-  }
-  .index .imagen-con-descripcion p {
-    font-size: 20px;
-    text-align: center;
-  }
+.index .imagen-con-descripcion-izquierda img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
 }
-
-@media screen and (max-width: 856px) {
-  .index .imagen-con-descripcion-izquierda {
-    overflow: hidden;
-    flex-direction: column;
+@media (max-width: 768px) {
+  .index .imagen-con-descripcion-izquierda img {
+    width: 100%;
   }
 }
 .index .imagen-con-descripcion-num3 {
-  display: flex;
-  align-items: center;
   background-color: #fc6446;
 }
 .index .imagen-con-descripcion-num3 img {
-  width: 40%;
+  width: 50%;
   height: auto;
   margin-right: 10px;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .index .imagen-con-descripcion-num3 img {
+    min-width: 100%;
+  }
+}
 .index .imagen-con-descripcion-num3 .descripcion {
   width: 50%;
-  background-color: none;
+  background-color: transparent;
   padding: 10px;
 }
 .index .imagen-con-descripcion-num3 .descripcion h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
   color: #fcfcdf;
   text-align: auto;
@@ -181,84 +152,103 @@
   text-align: auto;
   color: #fefee3;
 }
-
-.boton-index {
+.index .boton-index {
   margin-top: 15px;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-bottom: 5%;
 }
-
-.boton2 {
+.index .boton3 {
   font-size: 20px;
   font-weight: bold;
-  display: center;
-  margin: 15px;
   padding: 4px 10px;
-  color: #003c26;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border: black;
   border-radius: 30px;
   text-decoration: none;
+  color: #444040;
 }
-
-.boton3 {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 4px 10px;
-  color: #7e0000;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  border: black;
-  border-radius: 30px;
-  text-decoration: none;
-}
-
-.descripcion.boton-index .boton2, .boton3:hover {
+.index .boton3:hover {
+  transition: color 0.5s;
   color: rgb(240, 239, 239);
 }
-
-/* Media queries */
+@media screen and (max-width: 856px) {
+  .index .index,
+  .index .imagen-con-descripcion,
+  .index .imagen-con-descripcion-izquierda,
+  .index .imagen-con-descripcion-num3 {
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .index .index .imagen-con-descripcion img,
+  .index .index .imagen-con-descripcion-izquierda img,
+  .index .index .imagen-con-descripcion-num3 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  .index .index .imagen-con-descripcion .descripcion,
+  .index .index .imagen-con-descripcion-izquierda .descripcion,
+  .index .index .imagen-con-descripcion-num3 .descripcion {
+    width: 100%;
+  }
+  .index .index .imagen-con-descripcion .descripcion p,
+  .index .index .imagen-con-descripcion-izquierda .descripcion p,
+  .index .index .imagen-con-descripcion-num3 .descripcion p {
+    font-size: 25px;
+    text-align: center;
+  }
+  .index .index .imagen-con-descripcion .descripcion h2,
+  .index .index .imagen-con-descripcion-izquierda .descripcion h2,
+  .index .index .imagen-con-descripcion-num3 .descripcion h2 {
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
-  .imagen-con-descripcion-num3 {
+  .index .imagen-con-descripcion-num3 {
     flex-direction: column;
   }
-  .imagen-con-descripcion-num3 img {
+  .index .imagen-con-descripcion-num3 img {
     min-width: 375px;
     margin-bottom: 10px;
   }
-  .imagen-con-descripcion-num3 .descripcion {
+  .index .imagen-con-descripcion-num3 .descripcion {
     width: 50%;
   }
-  .imagen-con-descripcion-num3 h2 {
-    font-size: 20px;
+  .index .imagen-con-descripcion-num3 h2 {
+    font-size: 2.3em;
     text-align: center;
   }
-  .imagen-con-descripcion-num3 p {
+  .index .imagen-con-descripcion-num3 p {
     font-size: 1rem;
     text-align: center;
   }
-  .boton-index {
+  .index .boton-index {
     margin-top: 10px;
   }
-  .boton2,
-  .boton3 {
+  .index .boton3 {
     font-size: 18px;
     padding: 4px 8px;
   }
 }
 @media (max-width: 850px) {
-  .imagen-con-descripcion {
+  .index .imagen-con-descripcion {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
-  .imagen-con-descripcion img {
+  .index .imagen-con-descripcion img {
     width: 100%;
     margin-bottom: 10px;
   }
-  .imagen-con-descripcion .descripcion {
-    width: 100%;
+  .index .imagen-con-descripcion .descripcion {
+    width: 50%;
   }
 }
+
 .registrar {
   display: flex;
   align-items: center;
@@ -277,14 +267,16 @@
 .registrar .contenedor-registro .informacion {
   width: 40%;
   display: flex;
+  padding: 5px;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: #1e3932;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  padding-top: 10%;
 }
 .registrar .contenedor-registro .informacion .apartado {
-  width: 100%;
   padding: 0 30px;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -294,7 +286,7 @@
   max-height: 35%;
   padding-bottom: 15px;
 }
-.registrar .contenedor-registro .informacion .apartado h2 {
+.registrar .contenedor-registro .informacion .apartado h1 {
   font-size: 2.5rem;
 }
 .registrar .contenedor-registro .informacion .apartado p {
@@ -313,14 +305,15 @@
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
-.registrar .contenedor-registro .informacion .apartado:hover a {
+.registrar .contenedor-registro .informacion .apartado a:hover {
   background-color: #305249;
   border: none;
   color: #a5ada8;
-  box-shadow: 0 2px 5px color black;
+  box-shadow: 0 2px 5px black;
 }
 .registrar .contenedor-registro .conte-informacion {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 60%;
@@ -349,14 +342,10 @@
   color: rgb(14, 0, 0);
   border: solid thin rgb(46, 83, 57);
   transition: background-color 0.3s;
-  box-shadow: 0 2px 5px color black;
 }
 .registrar .contenedor-registro .conte-informacion .conte-informacion-derecha .iconos-registro i:hover {
   background-color: #0a895a;
   color: #999;
-}
-.registrar .contenedor-registro .conte-informacion .conte-informacion-derecha p {
-  color: #555;
 }
 .registrar .contenedor-registro .conte-informacion .conte-informacion-derecha .form-registro {
   margin: 30px 0 0 0;
@@ -368,15 +357,18 @@
   margin-bottom: 15px;
   border-radius: 20px;
   padding: 0 10px;
-  box-shadow: 0 2px 5px color black;
+  padding-top: 2%;
 }
-.registrar .contenedor-registro .conte-informacion .conte-informacion-derecha .form-registro input {
+.registrar .contenedor-registro .conte-informacion .conte-informacion-derecha .form-registro label input {
   width: 100%;
   padding: 10px;
   background-color: #e4e4e4;
   border: none;
   border-radius: 20px;
   color: #333;
+}
+.registrar .contenedor-registro .conte-informacion .conte-informacion-derecha .form-registro label input::placeholder {
+  color: #555;
 }
 .registrar .contenedor-registro .conte-informacion .conte-informacion-derecha .form-registro input[type=submit] {
   background-color: #00623e;
@@ -385,6 +377,8 @@
   border: none;
   padding: 10px 15px;
   margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .registrar .contenedor-registro .conte-informacion .conte-informacion-derecha .form-registro input[type=submit]:hover {
   background-color: #0a895a;
@@ -422,6 +416,10 @@
   .registrar .contenedor-registro .contenedor-registro.informacion {
     margin-top: 90%;
   }
+}
+.menubebidas {
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .menubebidas .menuParrafo h1 {
   color: rgba(51, 51, 51, 0.672);
