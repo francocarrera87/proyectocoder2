@@ -12,21 +12,20 @@
             height: auto;
           }
         .descripcion {
-            width: 50%;
-            background-color: none; 
+
             padding: 10px;
-            margin: 15px;
+            
             h1 {
-                font-size: 2,2em;
-                font-weight: bold;
-                color: #fcfcdf;
-                text-align: center;
-                margin-bottom: 10px;
-              }
+              font-size: 2.2em; 
+              font-weight: bold;
+              color: $titulosFoto1;
+              text-align: center;
+              margin-bottom: 10px;
+            }
             p {
-                font-size: 25px; 
+                font-size: 2em; 
                 text-align: center;
-                color: #fefee3; 
+                color: $titulosFoto1; 
               }
             }    
     }
@@ -70,9 +69,11 @@
         }
         
         .index.imagen-con-descripcion-izquierda img {
-          width: 100%;
+          width: 100%; 
+          height: auto;
           margin-bottom: 10px;
-        }
+          object-fit: cover; 
+            }
       
         .index.imagen-con-descripcion-izquierda .descripcion {
           width: 100%;
@@ -149,7 +150,7 @@
                   margin-bottom: 10px;
                 }
                 p {
-                  font-size: 1.3em; /* El tamaño se ajustará proporcionalmente al tamaño de fuente del contenedor padre */
+                  font-size: 1.3em; 
                   text-align: auto;
                   color: #fefee3;
                 }
@@ -203,7 +204,7 @@
   }
 
   .imagen-con-descripcion-num3 img {
-    min-width:385px ;
+    min-width:375px ;
     margin-bottom: 10px;
   }
 

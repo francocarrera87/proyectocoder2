@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://fonts.adobe.com/fonts/freight-sans?as_campaign=a8192&as_camptype=&as_channel=affiliate&as_source=partnerize&clickref=1011lwU8XQpo&mv=affiliate&mv2=pz);
 * {
   margin: 0;
@@ -9,6 +8,10 @@
   font-weight: 300;
 }
 
+/*colores fondo index*/
+/*tipografia index-img1*/
+/*color general*/
+/*bordes*/
 .header {
   background-color: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -60,22 +63,19 @@
   height: auto;
 }
 .index .imagen-con-descripcion .descripcion {
-  width: 50%;
-  background-color: none;
   padding: 10px;
-  margin: 15px;
 }
 .index .imagen-con-descripcion .descripcion h1 {
-  font-size: 2, 2em;
+  font-size: 2.2em;
   font-weight: bold;
   color: #fcfcdf;
   text-align: center;
   margin-bottom: 10px;
 }
 .index .imagen-con-descripcion .descripcion p {
-  font-size: 25px;
+  font-size: 2em;
   text-align: center;
-  color: #fefee3;
+  color: #fcfcdf;
 }
 .index .imagen-con-descripcion-izquierda {
   display: flex;
@@ -111,7 +111,9 @@
   }
   .index .index.imagen-con-descripcion-izquierda img {
     width: 100%;
+    height: auto;
     margin-bottom: 10px;
+    object-fit: cover;
   }
   .index .index.imagen-con-descripcion-izquierda .descripcion {
     width: 100%;
@@ -175,7 +177,7 @@
   margin-bottom: 10px;
 }
 .index .imagen-con-descripcion-num3 .descripcion p {
-  font-size: 1.3em; /* El tamaño se ajustará proporcionalmente al tamaño de fuente del contenedor padre */
+  font-size: 1.3em;
   text-align: auto;
   color: #fefee3;
 }
@@ -221,7 +223,7 @@
     flex-direction: column;
   }
   .imagen-con-descripcion-num3 img {
-    min-width: 385px;
+    min-width: 375px;
     margin-bottom: 10px;
   }
   .imagen-con-descripcion-num3 .descripcion {
