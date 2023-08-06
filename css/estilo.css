@@ -384,7 +384,6 @@
   background-color: #0a895a;
 }
 
-/*mediaq de registro*/
 @media screen and (max-width: 750px) {
   .registrar .bodyregistro {
     font-size: 12px;
@@ -479,6 +478,7 @@
 }
 .menubebidas .bebidas img:hover {
   transform: scale(1.1);
+  transition: transform 0.3s ease;
   box-shadow: inset 0 0 25px rgb(164, 174, 169);
 }
 .menubebidas .bebidas h4 {
